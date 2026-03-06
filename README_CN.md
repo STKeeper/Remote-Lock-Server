@@ -1,31 +1,32 @@
-```markdown
-# 🔒 远程锁屏服务器
+🔒 远程锁屏服务器
 
 一个轻量级的 PowerShell HTTP 服务器，让你可以通过局域网内的任何设备远程锁定 Windows 工作站。
 
-[English](README.md) | **中文**
+PowerShell
+Windows
+License
 
-## ✨ 功能特点
+English (http://readme.md/) | 中文
 
-- 🖱️ 浏览器一键锁屏
-- 🌙 深色主题，适配移动端
-- 📱 自动识别设备类型（iPhone、Android、Windows、Mac、Linux）
-- 📝 记录每次锁屏的时间、IP、设备信息
-- ⚡️ 零依赖，纯 PowerShell 实现
+✨ 功能特点
 
-## 📋 系统要求
+• 🖱️ 浏览器一键锁屏
+• 🌙 深色主题，适配移动端
+• 📱 自动识别设备类型（iPhone、Android、Windows、Mac、Linux）
+• 📝 记录每次锁屏的时间、IP、设备信息
+• ⚡️ 零依赖，纯 PowerShell 实现
 
-- Windows 10 / 11 / Server
-- PowerShell 5.1+
-- 管理员权限（`HttpListener` 需要）
+📋 系统要求
 
-## 🚀 快速开始
+• Windows 10 / 11 / Server
+• PowerShell 5.1+
+• 管理员权限（HttpListener 需要）
+
+🚀 快速开始
 
 1. 克隆仓库：
-   ```powershell
-   git clone https://github.com/STKeeper/Remote-Lock-Server.git
-   cd Remote-Lock-Server
-
+git clone https://github.com/STKeeper/Remote-Lock-Server.git
+cd Remote-Lock-Server
 2. 以管理员身份运行：
 powershell -ExecutionPolicy Bypass -File lock-server.ps1
 3. 在同一局域网内的任意设备上打开浏览器：
@@ -56,3 +57,5 @@ New-NetFirewallRule -DisplayName "Lock Server" -Direction Inbound -Port 9876 -Pr
 📜 许可证
 
 MIT
+
+───

@@ -1,32 +1,32 @@
-# 🔒 Remote Lock Server
+🔒 Remote Lock Server
 
 A lightweight PowerShell HTTP server that lets you remotely lock your Windows workstation from any device on your network.
 
-![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue?logo=powershell&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-10%2F11%2FServer-0078D6?logo=windows&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+PowerShell
+Windows
+License
 
-## ✨ Features
+English | 中文
 
-- 🖱️ One-tap screen lock via web browser
-- 🌙 Clean, dark-themed mobile-friendly UI
-- 📱 Auto-detects device type (iPhone, Android, Windows, Mac, Linux)
-- 📝 Logs every lock event with timestamp, IP, and device info
-- ⚡️ Zero dependencies — pure PowerShell
+✨ Features
 
-## 📋 Requirements
+• 🖱️ One-tap screen lock via web browser
+• 🌙 Clean, dark-themed mobile-friendly UI
+• 📱 Auto-detects device type (iPhone, Android, Windows, Mac, Linux)
+• 📝 Logs every lock event with timestamp, IP, and device info
+• ⚡️ Zero dependencies — pure PowerShell
 
-- Windows 10 / 11 / Server
-- PowerShell 5.1+
-- Administrator privileges (required for `HttpListener`)
+📋 Requirements
 
-## 🚀 Quick Start
+• Windows 10 / 11 / Server
+• PowerShell 5.1+
+• Administrator privileges (required for HttpListener)
+
+🚀 Quick Start
 
 1. Clone this repo:
-   ```powershell
-   git clone https://github.com/STKeeper/Remote-Lock-Server.git
-   cd Remote-Lock-Server
-
+git clone https://github.com/STKeeper/Remote-Lock-Server.git
+cd Remote-Lock-Server
 2. Run as Administrator:
 powershell -ExecutionPolicy Bypass -File lock-server.ps1
 3. Open a browser on any device in the same network:
@@ -57,3 +57,5 @@ New-NetFirewallRule -DisplayName "Lock Server" -Direction Inbound -Port 9876 -Pr
 📜 License
 
 MIT
+
+───
