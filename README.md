@@ -32,7 +32,7 @@ A lightweight PowerShell HTTP server that lets you remotely lock your Windows wo
 
 2. Run as Administrator:
    ```powershell
-   powershell -ExecutionPolicy Bypass -File lock-server.ps1
+   powershell -ExecutionPolicy Bypass -File Remote-Lock-Server.git
    ```
 
 3. Open a browser on any device in the same network:
@@ -48,7 +48,7 @@ Run on login via scheduled task:
 
 ```powershell
 $action = New-ScheduledTaskAction -Execute "powershell.exe" `
-  -Argument "-ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Scripts\lock-server.ps1"
+  -Argument "-ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Scripts\Remote-Lock-Server.git"
 $trigger = New-ScheduledTaskTrigger -AtLogOn
 Register-ScheduledTask -TaskName "LockServer" -Action $action -Trigger $trigger -RunLevel Highest
 ```
