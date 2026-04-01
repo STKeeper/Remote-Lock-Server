@@ -32,7 +32,7 @@
 
 2. 以管理员身份运行：
    ```powershell
-   powershell -ExecutionPolicy Bypass -File lock-server.ps1
+   powershell -ExecutionPolicy Bypass -File Remote-Lock-Server.ps1
    ```
 
 3. 在同一局域网内的任意设备上打开浏览器：
@@ -48,7 +48,7 @@
 
 ```powershell
 $action = New-ScheduledTaskAction -Execute "powershell.exe" `
-  -Argument "-ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Scripts\lock-server.ps1"
+  -Argument "-ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Scripts\Remote-Lock-Server.ps1"
 $trigger = New-ScheduledTaskTrigger -AtLogOn
 Register-ScheduledTask -TaskName "LockServer" -Action $action -Trigger $trigger -RunLevel Highest
 ```
